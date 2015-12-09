@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Font Repacker</title>
+    <style type="text/css">
+    /* CSS Reset*/
+    *{margin: 0;padding: 0;list-style: none;}
+
+    /** 清除内外边距 **/
+    body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+    dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+    pre, /* text formatting elements 文本格式元素 */
+    form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+    th, td /* table elements 表格元素 */ {
+      margin: 0;
+      padding: 0;
+    }
+
+    /** 设置默认字体 **/
+    body,
+    button, input, select, textarea /* for ie */ {
+      font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+    address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+    code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+    small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+    /** 重置列表元素 **/
+    ul, ol { list-style: none; }
+
+    /** 重置文本格式元素 **/
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+
+    /** 重置表单元素 **/
+    legend { color: #000; } /* for ie6 */
+    fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+    button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+    /* 注：optgroup 无法扶正 */
+
+    /** 重置表格元素 **/
+    table { border-collapse: collapse; border-spacing: 0; }
+
+    /* 清除浮动 */
+    .ks-clear:after, .clear:after {
+      content: '\20';
+      display: block;
+      height: 0;
+      clear: both;
+    }
+    .ks-clear, .clear {
+      *zoom: 1;
+    }
+
+    .main {padding: 30px 100px;}
+    .main h1{font-size:36px; color:#333; text-align:left;margin-bottom:30px; border-bottom: 1px solid #eee;}
+
+    .helps{margin-top:40px;}
+    .helps pre{
+      padding:20px;
+      margin:10px 0;
+      border:solid 1px #e7e1cd;
+      background-color: #fffdef;
+      overflow: auto;
+    }
+
+    .icon_lists li{
+      float:left;
+      width: 200px;
+      height:180px;
+      text-align: center;
+    }
+    .icon_lists .icon{
+      font-size: 42px;
+      line-height: 100px;
+      margin: 10px 0;
+      color:#333;
+      -webkit-transition: font-size 0.25s ease-out 0s;
+      -moz-transition: font-size 0.25s ease-out 0s;
+      transition: font-size 0.25s ease-out 0s;
+
+    }
+    .icon_lists .icon:hover{
+      font-size: 100px;
+    }
+    .red{
+        color: #ff5555;
+    }
+    .blue{
+        color: #0069ca;
+    }
+    </style>
+    <style id="mycss">
+        @font-face {
+            font-family: 'myfont';
+            src: url('./qta.eot'); /* IE9*/
+            src: url('./qta.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('./qta.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('./qta.svg#iconfont'); /* iOS 4.1- */
+          }
+          .ui-icon{
+            font-family:"myfont";font-size:16px;font-style:normal;
+          }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>repacker 图标</h1>
+        <ul class="icon_lists clear"><li><i class="icon ui-icon">&#xf106;</i><div class="name">f106</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f106</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf107;</i><div class="name">f107</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f107</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf067;</i><div class="name">f067</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f067</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf0d7;</i><div class="name">f0d7</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f0d7</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf00d;</i><div class="name">f00d</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f00d</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf04c;</i><div class="name">f04c</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f04c</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf111;</i><div class="name">f111</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f111</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf014;</i><div class="name">f014</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f014</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf098;</i><div class="name">f098</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f098</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf0da;</i><div class="name">f0da</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f0da</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf053;</i><div class="name">f053</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f053</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf054;</i><div class="name">f054</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f054</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf133;</i><div class="name">f133</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f133</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf068;</i><div class="name">f068</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f068</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf0de;</i><div class="name">f0de</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f0de</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf0dd;</i><div class="name">f0dd</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f0dd</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf013;</i><div class="name">f013</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f013</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf04b;</i><div class="name">f04b</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f04b</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf04d;</i><div class="name">f04d</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f04d</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf060;</i><div class="name">f060</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f060</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf044;</i><div class="name">f044</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f044</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf02f;</i><div class="name">f02f</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f02f</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf0c7;</i><div class="name">f0c7</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f0c7</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf00e;</i><div class="name">f00e</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f00e</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf002;</i><div class="name">f002</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f002</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf010;</i><div class="name">f010</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f010</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf0b2;</i><div class="name">f0b2</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f0b2</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf0e2;</i><div class="name">f0e2</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f0e2</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf01e;</i><div class="name">f01e</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f01e</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf006;</i><div class="name">f006</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f006</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf005;</i><div class="name">f005</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f005</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf00c;</i><div class="name">f00c</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f00c</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf056;</i><div class="name">f056</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f056</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf01d;</i><div class="name">f01d</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f01d</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf017;</i><div class="name">f017</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f017</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf095;</i><div class="name">f095</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f095</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf05e;</i><div class="name">f05e</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f05e</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf019;</i><div class="name">f019</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f019</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf147;</i><div class="name">f147</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f147</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf196;</i><div class="name">f196</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f196</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf112;</i><div class="name">f112</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f112</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf071;</i><div class="name">f071</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f071</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf10a;</i><div class="name">f10a</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f10a</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf164;</i><div class="name">f164</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f164</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf059;</i><div class="name">f059</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f059</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf0d8;</i><div class="name">f0d8</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f0d8</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf0f6;</i><div class="name">f0f6</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f0f6</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf003;</i><div class="name">f003</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f003</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf0f4;</i><div class="name">f0f4</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f0f4</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf01c;</i><div class="name">f01c</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f01c</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf02d;</i><div class="name">f02d</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f02d</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf023;</i><div class="name">f023</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f023</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf10c;</i><div class="name">f10c</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f10c</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf05a;</i><div class="name">f05a</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f05a</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf149;</i><div class="name">f149</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f149</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf077;</i><div class="name">f077</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f077</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf078;</i><div class="name">f078</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f078</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li><li><i class="icon ui-icon">&#xf0d9;</i><div class="name">f0d9</div><div class="code">&lt;i class="<span class="red">ui-icon</span>"&gt;<span class="blue">&amp;#x<em>f0d9</em>;</span>&lt;/i&gt;</div><div class="fontclass"></div></li>
+        </ul>
+
+
+        <div class="helps">
+            第一步：使用font-face声明字体
+            <pre>
+@font-face {font-family: 'myfont';
+    src: url('qta.eot'); /* IE9*/
+    src: url('qta.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('qta.woff') format('woff'), /* chrome、firefox */
+    url('qta.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('qta.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+</pre>
+第二步：定义使用myfont的样式
+            <pre>
+.ui-icon{
+    font-family:"myfont" !important;
+    font-size:16px;font-style:normal;
+}
+</pre>
+第三步：挑选相应图标并获取字体编码，应用于页面
+<pre>
+&lt;i class="ui-icon"&gt;&amp;#x33;&lt;/i&gt;
+</pre>
+        </div>
+
+    </div>
+</body>
+</html>
