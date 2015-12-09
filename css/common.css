@@ -64,9 +64,7 @@ a:hover {
 	margin-right: 20px;
     float: left;
     width: 900px;
-    border: solid #cecece;
     border-width: 0 1px 1px;
-    background: #FFF;
 }
 
 .title {
@@ -76,17 +74,22 @@ a:hover {
     color: #444;
     line-height: normal;
     height: 20px;
-    border-top: 1px solid #00a86e;
+    border-top: 2px solid #00a86e;
 }
 
 .content-left .list{
-	
 }
 
+.content-left .block {
+    display: block;
+    margin-bottom: 10px;
+    background: #fff;
+    border: solid #cecece;
+    border-width: 0 1px 1px;
+}
 .content-left .list li {
     font-size: 14px;
-    border-left: 1px solid #f2f2f2;
-    border-bottom: 1px solid #f2f2f2;
+    border: 1px solid #f2f2f2;
     color: #444;
     background: #fff;
     height: 101px;
@@ -94,9 +97,8 @@ a:hover {
     position: relative;
     display: inline-block;
 }
-
-.content-left .list li .coupon {
-    display: none;
+.content-left .list li:hover{
+	border: 1px solid #00a86e;
 }
 .content-left .list li img {
 	position: absolute;
@@ -134,20 +136,8 @@ a:hover {
     font-size: 0;
     display: none;
 }
-.content-left .list li .mask .left,.content-left .list li .mask .right {
-    font-size: 12px;
-    display: inline-block
-}
 
-.content-left .list li .mask .left {
-    width: 115px
-}
-
-.content-left .list li .mask .right {
-    display: inline;
-    text-decoration: underline
-}
-.content-left .list li img, .content-left .list li .name, .content-left .list li .cate {
+.content-left .list li img{
     position: absolute;
 }
 .content-right{
