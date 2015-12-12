@@ -11,28 +11,7 @@
 		<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 		<link href="images/recycle.ico" rel="icon" />
-		<style type="text/css">
-			body {
-			  	padding-top: 70px;
-			}
-			footer {
-			  	padding: 30px 0;
-			}
-			.panel-body img{
-				height: 89px;
-			}
-			.navbar-inverse .navbar-brand{
-				font-family: "微软雅黑";
-				font-size: 28px;
-				color: #FFFEEE;
-			}
-			.navbar-brand span{
-				font-size: 16px;
-			}
-			.navbar-collapse{
-				float: right;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 	</head>
 
 	<body>
@@ -43,9 +22,8 @@
 				</div>
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li class="active"><a href="#">首页</a></li>
+						<li><a href="./about.html">关于</a></li>
 					</ul>
 				</div>
 				<!-- /.nav-collapse -->
@@ -54,102 +32,168 @@
 		</nav>
 		<div class="container">
 			<div class="row row-offcanvas row-offcanvas-right">
-				
+
 				<div class="col-xs-12 col-sm-9">
 					<p class="pull-right visible-xs">
 						<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
 					</p>
-					<div class="jumbotron">
-						<h1>Hello!</h1>
-						<p>我们致力于构建最好用的可再生资源回收导航，一地鸡毛，让世界更美好</p>
-					</div>
+					<div class="alert alert-success" role="alert">我们致力于构建最好用的可再生资源回收导航，一地鸡毛，让世界更美好</div>
 					<div class="panel panel-default" id="all">
-					  	<div class="panel-heading">
-					    	<h3 class="panel-title">综合</h3>
-					  	</div>
+						<div class="panel-heading">
+							<h3 class="panel-title">综合</h3>
+						</div>
 						<div class="panel-body">
-						    <div class="col-xs-6 col-lg-3">
+							<div class="col-xs-6 col-lg-3">
 								<a href="http://www.ezaisheng.com" target="_blank">
-									<img class="img-thumbnail" src="http://www.ezaisheng.com/cmj/image/logo.jpg" alt="">
+									<img class="img-thumbnail" src="http://www.ezaisheng.com/cmj/image/logo.jpg" alt="易再生">
 								</a>
 							</div>
 							<!--/.col-xs-6.col-lg-3-->
 							<div class="col-xs-6 col-lg-3">
 								<a href="http://www.aifeipin.com" target="_blank">
-									<img class="img-thumbnail" src="http://www.aifeipin.com/file/upload/201512/02/15-00-07-28-1.png" alt="">
+									<img class="img-thumbnail" src="http://www.aifeipin.com/file/upload/201512/02/15-00-07-28-1.png" alt="爱废品网">
 								</a>
-	
+
 							</div>
 							<!--/.col-xs-6.col-lg-3-->
 							<div class="col-xs-6 col-lg-3">
 								<a href="http://www.china-waste.com" target="_blank">
-									<img class="img-thumbnail" src="http://images.china-waste.com/logo/200912148708805.gif" alt="">
+									<img class="img-thumbnail" src="http://images.china-waste.com/logo/200912148708805.gif" alt="中国废品网">
 								</a>
-	
+
 							</div>
 							<!--/.col-xs-6.col-lg-3-->
 							<div class="col-xs-6 col-lg-3">
 								<a href="http://www.zgfeipin.cn/" target="_blank">
-									<img class="img-thumbnail" src="http://www.zgfeipin.cn/Skins/Default/images/logo.gif" alt="">
+									<img class="img-thumbnail" src="http://www.zgfeipin.cn/Skins/Default/images/logo.gif" alt="中国废品回收网">
 								</a>
 							</div>
 						</div>
 					</div>
 
 					<div class="panel panel-default" id="phone">
-					  	<div class="panel-heading">
-					    	<h3 class="panel-title">二手手机</h3>
-					  	</div>
+						<div class="panel-heading">
+							<h3 class="panel-title">手机平板啥都有</h3>
+						</div>
 						<div class="panel-body">
-						
+							<div class="col-xs-6 col-lg-3">
+								<a href="http://www.mitaole.com" target="_blank">
+									<img class="img-thumbnail bg-black" src="http://www.mitaole.com/images/logo.png" alt="米淘乐">
+								</a>
+							</div>
 							<!--/.col-xs-6.col-lg-3-->
 							<div class="col-xs-6 col-lg-3">
 								<a href="http://www.aihuishou.com/" target="_blank">
-									<img class="img-thumbnail" src="http://www.aihuishou.com/Images/Common/logo2015.png" alt="">
+									<img class="img-thumbnail" src="http://www.aihuishou.com/Images/Common/logo2015.png" alt="爱回收">
 								</a>
 							</div>
 							<!--/.col-xs-6.col-lg-3-->
 							<div class="col-xs-6 col-lg-3">
 								<a href="http://www.lehuiso.com/" target="_blank">
-									<img class="img-thumbnail" src="http://www.lehuiso.com/images/logo.png" alt="">
+									<img class="img-thumbnail" src="http://www.lehuiso.com/images/logo.png" alt="乐回收">
 								</a>
 							</div>
 							<!--/.col-xs-6.col-lg-3-->
 							<div class="col-xs-6 col-lg-3">
 								<a href="http://www.ihuigo.com/" target="_blank">
-									<img class="img-thumbnail" src="http://www.ihuigo.com/images/new_images/logo.png" alt="">
+									<img class="img-thumbnail" src="http://www.ihuigo.com/images/new_images/logo.png" alt="回购网">
 								</a>
 							</div>
 							<div class="col-xs-6 col-lg-3">
 								<a href="http://www.jiyouwang.com" target="_blank">
-									<img class="img-thumbnail" src="http://www.jiyouwang.com/static/portal/images/logo.jpg" alt="">
+									<img class="img-thumbnail" src="http://www.jiyouwang.com/static/portal/images/logo.jpg" alt="机友网">
 								</a>
 							</div>
+
+							<div class="col-xs-6 col-lg-3">
+								<a href="http://docco.cn" target="_blank">
+									<img class="img-thumbnail" src="http://docco.cn/application/views/images/logo.png" alt="多科">
+								</a>
+							</div>
+
 						</div>
 					</div>
-					
+
 				</div>
 				<!--/.col-xs-12.col-sm-9-->
 
 				<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
 					<div class="list-group">
 						<a href="#" class="list-group-item active">综合</a>
-						<a href="#phone" class="list-group-item">二手手机</a>
+						<a href="#phone" class="list-group-item">手机平板啥都有</a>
 					</div>
 				</div>
 				<!--/.sidebar-offcanvas-->
 			</div>
 			<!--/row-->
 			<hr>
-
-			<footer>
-				<p>© Company 2014</p>
-			</footer>
-
 		</div>
+
+		<footer class="footer " id="foot">
+			<div class="container">
+				<div class="row footer-top">
+					<div class="col-sm-6 col-lg-6">
+						<h4>
+		              LOGO正在努力设计中
+		            </h4>
+						<p>本网站所列链接都是好网站</p>
+					</div>
+					<div class="col-sm-6  col-lg-5 col-lg-offset-1">
+						<div class="row about">
+							<div class="col-xs-3">
+								<h4>关于</h4>
+								<ul class="list-unstyled">
+									<li><a href="/about/">关于我们</a></li>
+									<li><a href="/ad/">广告合作</a></li>
+									<li><a href="/links/">友情链接</a></li>
+									<li><a href="/hr/">招聘</a></li>
+								</ul>
+							</div>
+							<div class="col-xs-3">
+								<h4>联系方式</h4>
+								<ul class="list-unstyled">
+									<li><a href="http://weibo.com/imchen" title="一地鸡毛网官方微博" target="_blank">新浪微博</a></li>
+									<li><a href="mailto:535829710@qq.com">电子邮件</a></li>
+								</ul>
+							</div>
+							<div class="col-xs-3">
+								<h4>友情链接</h4>
+								<ul class="list-unstyled">
+									<li><a href="http://www.golaravel.com/" target="_blank">Laravel中文网</a></li>
+									<li><a href="http://www.ghostchina.com/" target="_blank">Ghost中国</a></li>
+								</ul>
+							</div>
+							<div class="col-xs-3">
+								<h4>赞助商</h4>
+								<ul class="list-unstyled">
+									<li><a href="#foot" target="_blank">还没有</a></li>
+									<li><a href="#foot" target="_blank">等你来</a></li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<hr>
+				<div class="row footer-bottom">
+					<ul class="list-inline text-center">
+						<li><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备XXX号</a></li>
+						<li>京公网安备11010802015XXX</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 
 		<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 		<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script>
+		(function(){
+		    var bp = document.createElement('script');
+		    bp.src = '//push.zhanzhang.baidu.com/push.js';
+		    var s = document.getElementsByTagName("script")[0];
+		    s.parentNode.insertBefore(bp, s);
+		})();
+		</script>
 	</body>
 
 </html>
