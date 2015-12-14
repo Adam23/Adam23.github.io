@@ -1,43 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 
-  <head>
+	<head>
 
-    <meta charset="utf-8">
-    <title>关于 一地鸡毛</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="一地鸡毛是一个致力于环保的导航网站。它是一个成长中的导航。一地鸡毛致力于为广大资源回收从业者、及普通消费者提供详尽的导航服务等，我们的口号是：一地鸡毛，让世界更美好。">
-    <meta name="keywords" content="回收,二手手机,可再生,环保,废物利用">
-    <meta name="author" content="垃圾分类">
-    <meta name="robots" content="index,follow">
-    <meta name="application-name" content="1djm.com">
+		<meta charset="utf-8">
+		<title>关于 一地鸡毛</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="一地鸡毛是一个致力于环保的导航网站。它是一个成长中的导航。一地鸡毛致力于为广大资源回收从业者、及普通消费者提供详尽的导航服务等，我们的口号是：一地鸡毛，让世界更美好。">
+		<meta name="keywords" content="回收,二手手机,可再生,环保,废物利用">
+		<meta name="author" content="垃圾分类">
+		<meta name="robots" content="index,follow">
+		<meta name="application-name" content="1djm.com">
 
-    <!-- Site CSS -->
-   <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-   <link href="http://static.bootcss.com/www/assets/css/site.min.css?v5" rel="stylesheet">
-    <style>
-    .job-hot {
-        position: absolute;
-        color: #d9534f;
-        right: 0;
-        top: 15px;
-    }
-    </style>
+		<!-- Site CSS -->
+		<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<style>
+			body {
+				padding-top: 30px;
+			}
+			.job-hot {
+				position: absolute;
+				color: #d9534f;
+				right: 0;
+				top: 15px;
+			}
+			.jumbotron {
+				position: relative;
+				padding: 40px 0;
+				color: #fff;
+				text-align: center;
+				text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
+				background: #020031;
+				background: -moz-linear-gradient(45deg, #020031 0, #6d3353 100%);
+				background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #020031), color-stop(100%, #6d3353));
+				background: -webkit-linear-gradient(45deg, #020031 0, #6d3353 100%);
+				background: -o-linear-gradient(45deg, #020031 0, #6d3353 100%);
+				background: -ms-linear-gradient(45deg, #020031 0, #6d3353 100%);
+				background: linear-gradient(45deg, #020031 0, #6d3353 100%);
+				filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#020031', endColorstr='#6d3353', GradientType=1);
+				-webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+				-moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+				box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2)
+			}
+			@media screen and (min-width: 768px) {
+				.subhead {
+					text-align: left
+				}
+			}
+			.subhead h1 {
+				font-size: 60px
+			}
+			.subhead p {
+				margin-bottom: 20px
+			}
+			@media (min-width: 768px) .navbar {
+				min-height: 40px;
+			}
+			@media screen and (min-width: 768px) {
+				.subhead p {
+					text-align: left
+				}
+			}
+			article.page .post-content h2 {
+				font-size: 36px;
+				padding-bottom: 9px;
+				margin: 40px 0 20px;
+				border-bottom: 1px solid #eee;
+			}
+			.post-content {
+				font-size: 16px;
+				line-height: 1.8;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			.post-content p{
+				margin-bottom: 1.8em;
+			}
+			a.list-group-item:hover{
+				color: #337ab7;
+			}
+		</style>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" href="http://static.bootcss.com/www/assets/ico/apple-touch-icon-precomposed.png">
-    <link href="images/recycle.ico" rel="icon" />
-    <link rel="stylesheet" type="text/css" href="css/common.css"/>
-  </head>
-  <body>
-	<nav class="navbar navbar-fixed-top navbar-inverse">
+		<!-- Favicons -->
+		<link rel="apple-touch-icon-precomposed" href="http://static.bootcss.com/www/assets/ico/apple-touch-icon-precomposed.png">
+		<link href="images/recycle.ico" rel="icon" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-fixed-top navbar-inverse">
 			<div class="container">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="http://1djm.com">一地鸡毛<span>让世界更美好</span></a>
@@ -53,52 +110,52 @@
 			<!-- /.container -->
 		</nav>
 
-
-<!-- Subhead
+		<!-- Subhead
 ================================================== -->
-<header class="jumbotron subhead">
-  <div class="container">
-    <h1>关于 一地鸡毛</h1>
-    <p class="lead">一地鸡毛致力于为广大资源回收从业者、及普通消费者提供详尽的导航服务等，我们的口号是：一地鸡毛，让世界更美好。</p>
-  </div>
-</header>
+		<header class="jumbotron subhead">
+			<div class="container">
+				<h1>关于 一地鸡毛</h1>
+				<p class="lead">一地鸡毛致力于为广大资源回收从业者、及普通消费者提供详尽的导航服务等，我们的口号是：一地鸡毛，让世界更美好。</p>
+			</div>
+		</header>
 
+		<div class="container">
 
-<div class="container">
-
-  <!-- Docs nav
+			<!-- Docs nav
   ================================================== -->
-  <div class="row">
-    <div class="col-md-3 ">
-      <div id="toc" class="bc-sidebar">
+			<div class="row">
+				<div class="col-md-3 ">
+			
+						<div class="nav list-group">
+							<a href="#about" class="list-group-item">关于我们</a>
+							<a href="#send" class="list-group-item">告诉我们 你的网站</a>
+							<a href="#join" class="list-group-item">加入我们</a>
+						</div>
+				</div>
 
-      </div>
-    </div>
+				<div class="col-md-9">
+					<article class="post page">
+						<section class="post-content">
+							<h2 id="about">关于我们</h2>
+							<p>一地鸡毛 -- 1djm.com 创建于2015年。起因是国内没有较好的关于资源回收的导航网站，因此，我们对国内比较知名的资源回收网站进行了整理，并且建立了QQ群和微博（<a href="http://weibo.com/imchen">@垃圾分类小能手</a>），方便更多热爱环保的人们分享。</p>
+							<h2 id="send">告诉我们 你的网站</h2>
+							<p>你是资源回收相关网站的站长吗？你是相关从业人员吗？你想推广自己的资源回收网站吗？那就把你的网站show出来吧！</p>
+							<p>凡是经过确认采用的网站，我们会将你所提交网站展示到我们的导航中，并有机会在首页进行推荐。</p>
+							<blockquote>
+								<p>请发邮件到下面的邮箱，并在邮件标题上注明（推荐网站 -- 网站名称或网址）。
+									<br>Mail： 535829710@qq.com</p>
+							</blockquote>
+							<h2 id="join">加入我们</h2>
+							<p>一地鸡毛致力于环保事业，坚持分享、开放的互联网精神，旨在为广大资源回收从业者及消费者提供导航服务的平台，如果你和我们有相同的目标，我们乐意一起携手前行。</p>
+							<p>如果你也热爱环保，有一颗创业的心，欢迎和我们联系，更欢迎你加入我们的团队！</p>
+							<p>QQ: 525829710 Mail: 535829710@qq.com</p>
 
-    <div class="col-md-9">
-      <article class="post page">
-        <section class="post-content">
-              <h2 id="-">关于我们</h2>
-<p>一地鸡毛 -- 1djm.com 创建于2015年。起因是国内没有较好的关于资源回收的导航网站，因此，我们对国内比较知名的资源回收网站进行了整理，并且建立了QQ群和微博（<a href="http://weibo.com/imchen">@垃圾分类小能手</a>），方便更多热爱环保的人们分享。</p>
-<h2 id="-bootstrap-">告诉我你的网站</h2>
-<p>你是资源回收相关网站的站长吗？你是相关从业人员吗？你想推广自己的资源回收网站吗？那就把你的网站show出来吧！</p>
-<p>凡是经过确认采用的网站，我们会将你所提交网站展示到我们的导航中，并有机会在首页进行推荐。</p>
-<blockquote>
-<p>请发邮件到下面的邮箱，并在邮件标题上注明（推荐网站 -- 网站名称或网址）。<br>Mail： 535829710@qq.com</p>
-</blockquote>
-<h2 id="-">加入我们</h2>
-<p>一地鸡毛致力于环保事业，坚持分享、开放的互联网精神，旨在为广大资源回收从业者及消费者提供导航服务的平台，如果你和我们有相同的目标，我们乐意一起携手前行。</p>
-<p>如果你也热爱环保，有一颗创业的心，欢迎和我们联系，更欢迎你加入我们的团队！</p>
-<p>QQ: 525829710
-Mail: 535829710@qq.com</p>
+						</section>
+					</article>
+				</div>
+			</div>
 
-          </section>
-      </article>
-    </div>
-  </div>
-
-</div>
-
+		</div>
 
 		<footer class="footer " id="foot">
 			<div class="container">
@@ -155,14 +212,14 @@ Mail: 535829710@qq.com</p>
 			</div>
 		</footer>
 
-    <!-- Bootstrap core JavaScript
+		<!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="http://cdn.bootcss.com/unveil/1.3.0/jquery.unveil.min.js"></script>
-    <script src="http://cdn.bootcss.com/scrollup/2.4.0/jquery.scrollUp.min.js"></script>
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="http://cdn.bootcss.com/unveil/1.3.0/jquery.unveil.min.js"></script>
+		<script src="http://cdn.bootcss.com/scrollup/2.4.0/jquery.scrollUp.min.js"></script>
 
+	</body>
 
-    </body>
 </html>

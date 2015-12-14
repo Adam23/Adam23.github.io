@@ -9,8 +9,7 @@
 			.lead {
 				font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 			}
-			body {
-				padding-top: 70px;
+			body {				
 				background: #f2f2f2;
 			}
 			footer {
@@ -19,10 +18,14 @@
 				color: #959595;
 			}
 			.panel-body .col-lg-3 {
-				height: 90px;
+				height: 100px;
+				display: table-cell;
+				vertical-align:middle;
+				text-align:center;
+				display: block;
 			}
-			.panel-body img.bg-black {
-				background: #323436;
+			.panel-body .col-lg-3 img.bg-black {
+				background: #3f4042;
 			}
 			.navbar-inverse .navbar-brand {
 				font-family: "微软雅黑";
@@ -35,3 +38,4 @@
 			.navbar-collapse {
 				float: right;
 			}
+			
