@@ -9,23 +9,42 @@
 			.lead {
 				font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 			}
-			body {				
+			body {
 				background: #f2f2f2;
+			}
+			.yahei {
+				font-family: 'Microsoft YaHei', 微软雅黑;
 			}
 			footer {
 				padding: 30px 0;
 				background: #202020;
 				color: #959595;
 			}
+			.panel-default .panel-heading {
+				background: -moz-linear-gradient(left, #3fa0fb, #f2f2f2);
+				background: -webkit-linear-gradient(left, #3fa0fb, #f2f2f2);
+				background: -o-linear-gradient(left, #3fa0fb, #f2f2f2);
+			}
+			.panel-heading h3.panel-title {
+				font-size: 18px;
+				color: #fff;
+				font-family: 'Microsoft YaHei', 微软雅黑;
+			}
 			.panel-body .col-lg-3 {
 				height: 100px;
 				display: table-cell;
-				vertical-align:middle;
-				text-align:center;
+				vertical-align: middle;
+				text-align: center;
 				display: block;
 			}
-			.panel-body .col-lg-3 img.bg-black {
+			.panel-body .col-lg-3 img {
+				max-height: 90px;
+			}
+			.bg-black {
 				background: #3f4042;
+			}
+			.bg-yellow {
+				background: #ffda44;
 			}
 			.navbar-inverse .navbar-brand {
 				font-family: "微软雅黑";
@@ -38,4 +57,8 @@
 			.navbar-collapse {
 				float: right;
 			}
-			
+			a.list-group-item:hover {
+				color: #fff;
+				text-decoration: none;
+				background-color: #3fa0fb;
+			}
